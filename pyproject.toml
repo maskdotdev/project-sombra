@@ -1,0 +1,30 @@
+[project]
+name = "project-sombra"
+version = "0.1.0"
+description = "Project Sombra: fast code embedding training and retrieval"
+requires-python = ">=3.12"
+dependencies = [
+  "accelerate>=1.12.0",
+  "datasets>=4.5.0",
+  "evaluate>=0.4.6",
+  "hnswlib>=0.8.0",
+  "mteb>=2.7.24",
+  "numpy>=2.4.2",
+  "onnx>=1.19.0",
+  "onnxruntime-gpu>=1.23.0",
+  "pandas>=3.0.0",
+  "pyarrow>=23.0.0",
+  "scikit-learn>=1.8.0",
+  "sentencepiece>=0.2.1",
+  "tokenizers>=0.22.2",
+  "torch>=2.6.0",
+  "transformers>=5.1.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu124" }]

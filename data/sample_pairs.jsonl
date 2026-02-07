@@ -1,0 +1,6 @@
+{"anchor": "python function to reverse a list", "positive": "def reverse_list(xs):\n    return list(reversed(xs))"}
+{"anchor": "javascript remove duplicates from array", "positive": "const dedupe = (arr) => [...new Set(arr)];"}
+{"anchor": "go read file contents", "positive": "func readFile(path string) ([]byte, error) {\n    return os.ReadFile(path)\n}"}
+{"anchor": "rust parse json string", "positive": "let v: serde_json::Value = serde_json::from_str(input)?;"}
+{"anchor": "java sort list ascending", "positive": "Collections.sort(values);"}
+{"anchor": "typescript debounce function", "positive": "export const debounce = <T extends (...args: any[]) => void>(fn: T, ms: number) => { let t: ReturnType<typeof setTimeout> | null = null; return (...args: Parameters<T>) => { if (t) clearTimeout(t); t = setTimeout(() => fn(...args), ms); }; };"}
